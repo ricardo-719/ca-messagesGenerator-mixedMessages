@@ -1,0 +1,6 @@
+Topic: This app will be a decision randomizer similar in spirit to 8-ball but providing a richer combination of possible answers.
+Method: The sencentes will be divided in three main sections that will come together providing coherent general random answers to users decision inquiries.
+Purpose: This is a fun silly app for users to make random decisions about unimportant things or funny dares with friends.
+Use: The user press and button to generate the answers. No other input is required. 
+Design: The whole app is contained in a single page. In this page the user will see one parragraph with instructions and one button.
+Files: The project will consist of a index HTML page, CSS, and Javascript.
