@@ -24,17 +24,33 @@ const sectionThree =
 'Forgiving', 'Freethinking', 'Friendly', 'Fun-loving', 'Generous', 'Gentle', 'Genuine', 'Good-natured', 'Hardworking', 'Healthy', 'Helpful', 
 'Heroic', 'Honest', 'Honorable', 'Humble', 'Humorous', 'Idealistic', 'Imaginative', 'Impressive', 'Incorruptible', 'Independent', 'Individualistic',
 'Innovative', 'Insightful', 'Intelligent', 'Intuitive', 'Kind']
+let lowerSectionThree = sectionThree.map(el => {
+    return el.toLowerCase();
+});
 
 const answerRandomGenerator = (ansArray) => {
-    console.log('hi')
     return ansArray[Math.floor(Math.random() * ansArray.length)]
 }
 
 const ansCompilerFunction = () => {
     let ansCompiler = document.getElementById("mixedMessageAnswer");
     
-    ans = `${answerRandomGenerator(sectionOne)}. Improve your odds by being ${answerRandomGenerator(sectionThree)}. This answer is relevant ${answerRandomGenerator(sectionTwo)}.`
+    ans = `${answerRandomGenerator(sectionOne)}. Improve your odds by being ${answerRandomGenerator(lowerSectionThree)}. This answer is relevant ${answerRandomGenerator(sectionTwo)}.`
     console.log(ans)
 
     ansCompiler.innerHTML = ans;
 }
+
+// Animation of the Button
+
+const element = document.getElementById("explosiveLink");
+let text = element.innerText.split("");
+
+element.innerText = "";
+
+text.forEach(letter => {
+    const span = document.createElement("span");
+    span.className="letter";
+    span.innerText=letter;
+    element.appendChild(span);
+});

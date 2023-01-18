@@ -49,3 +49,73 @@ p, a {
     text-align: center;
     padding-top: 5%;
 }
+
+.fancy > .letter {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+
+.fancy:hover > .letter:nth-child(1) {
+    transform: translate(-10%, 20%) rotate(8deg);
+    transition-duration: 800ms;
+}
+
+.fancy:hover > .letter:nth-child(2) {
+    transform: translate(-8%, 8%) rotate(-6deg);
+    transition-duration: 800ms;
+}
+
+.fancy:hover > .letter:nth-child(3) {
+    transform: translate(0%, 7%) rotate(-8deg);
+    transition-duration: 800ms;
+}
+
+.fancy:hover > .letter:nth-child(4) {
+    transform: translate(0%, -20%) rotate(-3deg);
+    transition-duration: 800ms;
+}
+
+.fancy:hover > .letter:nth-child(5) {
+    transform: translate(0%, -15%) rotate(-5deg);
+    transition-duration: 800ms;
+}
+
+.fancy:hover > .letter:nth-child(6) {
+    transform: translate(0%, 15%) rotate(10deg);
+    transition-duration: 800ms;
+}
+
+.fancy:active {
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+.fancy:active > .letter:nth-child(1) {
+    transform: translate(-8%, 18%) rotate(6deg);
+    transition-duration: 300ms;
+}
+
+.fancy:active > .letter:nth-child(2) {
+    transform: translate(-5%, 5%) rotate(-4deg);
+    transition-duration: 300ms;
+}
+
+.fancy:active > .letter:nth-child(3) {
+    transform: translate(0%, 5%) rotate(-6deg);
+    transition-duration: 300ms;
+}
+
+.fancy:active > .letter:nth-child(4) {
+    transform: translate(0%, -18%) rotate(-1deg);
+    transition-duration: 300ms;
+}
+
+.fancy:active > .letter:nth-child(5) {
+    transform: translate(0%, -13%) rotate(-3deg);
+    transition-duration: 300ms;
+}
+
+.fancy:active > .letter:nth-child(6) {
+    transform: translate(0%, 13%) rotate(8deg);
+    transition-duration: 300ms;
+}
